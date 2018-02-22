@@ -173,7 +173,8 @@ module.exports = {
                                     modules: true,
                                     namedExport: true,
                                     camelCase: true,
-                                    sourceMap: true
+                                    sourceMap: true,
+                                    localIdentName: '[local]'
                                 },
                             },
                             {

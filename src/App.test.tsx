@@ -10,10 +10,15 @@ it('renders without crashing', () => {
 
 it('renders the header', () => {
     const app = enzyme.shallow(<App/>);
-    expect(app.find('.App-title')).toBeDefined();
+    expect(app.find('.app-header').exists()).toBe(true);
 });
 
 it('renders the description', () => {
     const app = enzyme.shallow(<App/>);
-    expect(app.find('.App-intro')).toBeDefined();
+    expect(app.find('.app-intro').exists()).toBe(true);
+});
+
+it('renders the logo', () => {
+    const app = enzyme.shallow(<App/>);
+    expect(app.find('.app-logo').exists()).toBe(true);
 });

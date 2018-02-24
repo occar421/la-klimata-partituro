@@ -187,23 +187,21 @@ module.exports = {
                                     },
                                     use: [
                                         {
-                                            // loader: require.resolve('css-loader'),
-                                            // options: {
-                                            //     importLoaders: 1,
-                                            //     minimize: true,
-                                            //     sourceMap: shouldUseSourceMap,
-                                            // },
-                                            loader: require.resolve('typings-for-css-modules-loader'),
+                                            loader: require.resolve('css-loader'),
                                             options: {
                                                 importLoaders: 1,
                                                 minimize: true,
-                                                modules: true,
-                                                namedExport: true,
-                                                camelCase: true,
-                                                sourceMap: shouldUseSourceMap
+                                                sourceMap: shouldUseSourceMap,
                                             },
                                         },
-                                        // require.resolve('typed-css-modules-loader'),
+                                        {
+                                            loader: require.resolve('typed-css-modules-loader'),
+                                            options: {
+                                                camelCase: true,
+                                                searchDir: './src',
+                                                outDir: './typings'
+                                            }
+                                        },
                                         {
                                             loader: require.resolve('postcss-loader'),
                                             options: {

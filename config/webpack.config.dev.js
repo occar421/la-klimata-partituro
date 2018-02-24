@@ -167,15 +167,22 @@ module.exports = {
                         use: [
                             require.resolve('style-loader'),
                             {
-                                loader: require.resolve('typings-for-css-modules-loader'),
+                                loader: require.resolve('css-loader'),
                                 options: {
-                                    importLoaders: 1,
+                                    importLoaders: 2,
                                     modules: true,
-                                    namedExport: true,
                                     camelCase: true,
                                     sourceMap: true,
                                     localIdentName: '[local]'
                                 },
+                            },
+                            {
+                                loader: require.resolve('typed-css-modules-loader'),
+                                options: {
+                                    camelCase: true,
+                                    searchDir: './src',
+                                    outDir: './typings'
+                                }
                             },
                             {
                                 loader: require.resolve('postcss-loader'),

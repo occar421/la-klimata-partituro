@@ -40,6 +40,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "lint": "tslint -p tsconfig.json",
     "tcm": "node ./node_modules/typed-css-modules/lib/cli.js ./src -c -o ./typings",
     "prestart": "yarn run tcm",
@@ -50,16 +51,21 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
+    "@storybook/react": "^3.3.14",
     "@types/enzyme": "^3.1.9",
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/jest": "^22.1.3",
     "@types/react": "^16.0.38",
     "@types/react-dom": "^16.0.4",
     "@types/react-test-renderer": "^16.0.1",
+    "@types/storybook__addon-actions": "^3.0.2",
+    "@types/storybook__react": "^3.0.7",
+    "babel-core": "^6.26.0",
     "tslint-xo": "^0.6.0",
     "typed-css-modules": "^0.3.1",
     "typed-css-modules-loader": "^0.0.11",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "@storybook/addon-actions": "latest"
   },
   "jest": {
     "collectCoverageFrom": [

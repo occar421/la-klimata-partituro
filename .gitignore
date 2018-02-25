@@ -23,4 +23,7 @@ yarn-error.log*
 .idea
 
 # generate .css.d.ts files
-typings/*.css.d.ts
+typings/**/*.css.d.ts
+
+# generated storyshots
+**/stories/__snapshots__

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as style from './App.css';
 
+import Button from './components/Button';
 import logo from './logo.svg';
 
 class App extends React.Component {
@@ -13,10 +14,13 @@ class App extends React.Component {
                 </header>
                 <p className={style.appIntro}>
                     To get started, edit <code>src/App.tsx</code> and save to reload.
+                    <Button onClick={this.onClick}>Click me!</Button>
                 </p>
             </div>
         );
     }
+
+    private readonly onClick = () => alert('Hello');
 }
 
 export default App;

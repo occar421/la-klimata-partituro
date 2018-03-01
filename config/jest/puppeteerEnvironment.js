@@ -33,3 +33,5 @@ class PuppeteerEnvironment extends NodeEnvironment {
     return super.runScript(script);
   }
 }
+
+module.exports = PuppeteerEnvironment;

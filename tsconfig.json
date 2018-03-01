@@ -33,6 +33,7 @@
     "jest",
     "src/setupTests.ts",
     "config",
-    "jest.config.js"
+    "jest.config.js",
+    "jest-e2e.config.js"
   ]
 }

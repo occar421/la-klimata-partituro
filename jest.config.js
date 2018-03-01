@@ -2,8 +2,8 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
   setupFiles: ['<rootDir>/config/polyfills.js'],
   testMatch: [
-    '<rootDir>/src/**/__tests__/**/*.ts?(x)',
-    '<rootDir>/src/**/?(*.)(spec|test).ts?(x)'
+    '<rootDir>/src/**/__tests__/**/*!(.e2e).ts?(x)',
+    '<rootDir>/src/**/?(*.)(spec|test)!(.e2e).ts?(x)'
   ],
   testURL: 'http://localhost',
   transform: {
@@ -36,7 +36,4 @@ module.exports = {
     }
   },
   setupTestFrameworkScriptFile: '<rootDir>/src/setupTests.ts',
-  globalSetup: '<rootDir>/config/jest/globalSetup.js',
-  globalTeardown: '<rootDir>/config/jest/teardown.js',
-  testEnvironment: '<rootDir>/config/jest/puppeteer_environment.js'
 };

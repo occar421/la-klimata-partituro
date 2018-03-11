@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button-3 1`] = `
+<button
+  className="button button-extra"
+>
+  😘😎
+</button>
+`;

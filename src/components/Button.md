@@ -1,7 +1,7 @@
 Normal Example
 
 ```jsx
-<Button>This is Content</Button>
+<Button>This is the Content</Button>
 ```
 
 With emoji.

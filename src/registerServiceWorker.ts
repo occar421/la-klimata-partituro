@@ -121,6 +121,9 @@ export default () => {
   });
 };
 
+/**
+ * Unregister ServiceWorker
+ */
 export const unregister = () => {
   if (!('serviceWorker' in navigator)) {
     return;

@@ -25,5 +25,5 @@ yarn-error.log*
 # generate .css.d.ts files
 typings/**/*.css.d.ts
 
-# generated storyshots
-**/stories/__snapshots__
+# generated styleguide
+/styleguide

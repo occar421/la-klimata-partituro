@@ -134,6 +134,59 @@
       {
         "usePrettierrc": true
       }
+    ],
+    "completed-docs": [
+      true,
+      {
+        "classes": {
+          "visibilities": [
+            "all"
+          ]
+        },
+        "enums": {
+          "visibilities": [
+            "all"
+          ]
+        },
+        "functions": {
+          "visibilities": [
+            "all"
+          ]
+        },
+        "interfaces": {
+          "visibilities": [
+            "all"
+          ]
+        },
+        "methods": {
+          "locations": [
+            "all"
+          ],
+          "privacies": [
+            "public",
+            "protected"
+          ]
+        },
+        "namespaces": {
+          "visibilities": [
+            "exported"
+          ]
+        },
+        "properties": {
+          "locations": [
+            "all"
+          ],
+          "privacies": [
+            "public",
+            "protected"
+          ]
+        },
+        "variables": {
+          "visibilities": [
+            "exported"
+          ]
+        }
+      }
     ]
   }
 }

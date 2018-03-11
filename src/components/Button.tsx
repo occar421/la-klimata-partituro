@@ -2,13 +2,20 @@ import * as React from 'react';
 
 import * as style from './Button.css';
 
-// @ts-ignore
+/**
+ * Very simple Button for example.
+ */
 export default (props: {
-  // tslint:disable-next-line:no-any
+  /**
+   * Button content string
+   */
   children?: string;
+  /**
+   * Event handler when the user clicks this button.
+   * @param event Event argument for `onClick`
+   */
   onClick(event: React.MouseEvent<HTMLButtonElement>): void;
 }) => (
-  // *style.button*/
   <button
     className={[style.button, style.buttonExtra].join(' ')}
     onClick={props.onClick}

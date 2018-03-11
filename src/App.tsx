@@ -4,8 +4,14 @@ import * as style from './App.css';
 import Button from './components/Button';
 import logo from './logo.svg';
 
+/**
+ * Main app component
+ */
 class App extends React.Component {
-    public render() {
+  /**
+   * Render component
+   */
+  public render() {
         return (
             <div className={style.app}>
                 <header className={style.appHeader}>

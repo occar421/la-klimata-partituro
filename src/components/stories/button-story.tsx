@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 import Button from '../Button';
 
-storiesOf('Buttona', module)
+storiesOf('Button', module)
   .add('with text', () => (
     <Button onClick={action('clicked')}>Hello Button!</Button>
   ))
